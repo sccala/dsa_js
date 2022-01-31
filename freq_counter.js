@@ -6,21 +6,21 @@
 //
 
 //naive solution
-function same(arr1, arr2) {
-  //if 2 arrays have different length, always false
-  if (arr1.length !== arr2.length) {
-    return false
-  }
-  //
-  for (let i = 0; i < arr1.length; i++) {
-    let correctIndex = arr2.indexOf(arr1[i] ** 2)
-    if (correctIndex === -1) {
-      return false
-    }
-    arr2.splice(correctIndex)
-  }
-  return true
-}
+// function same(arr1, arr2) {
+//   //if 2 arrays have different length, always false
+//   if (arr1.length !== arr2.length) {
+//     return false
+//   }
+//   //
+//   for (let i = 0; i < arr1.length; i++) {
+//     let correctIndex = arr2.indexOf(arr1[i] ** 2)
+//     if (correctIndex === -1) {
+//       return false
+//     }
+//     arr2.splice(correctIndex)
+//   }
+//   return true
+// }
 
 // //refactored solution
 function same(arr1, arr2) {
