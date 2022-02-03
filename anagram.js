@@ -7,14 +7,14 @@ function validAnagram(first, second) {
   const lookup = {}
 
   for (let i = 0; i < first.length; i++) {
-    let letter = first[i]
     // if letter exists, increment. Otherwise set to 1
+    let letter = first[i]
     lookup[letter] ? (lookup[letter] += 1) : (lookup[letter] = 1)
   }
   // {a:3, n:1, g:1, r:1, m:1}
   
   for (let i = 0; i < second.length; i++) {
-    // can't find letter or letter is zero tehn it's not an anagram
+    // can't find letter or letter is zero then it's not an anagram
     let letter = second[i]
     if (!lookup[letter]) {
       return false
