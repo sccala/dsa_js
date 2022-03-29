@@ -2,7 +2,7 @@
 
 function countUniqueValues(arr) {
   let i = 0
-  let j = 1
+
   if (arr.length === 0) {
     return 0
   }
